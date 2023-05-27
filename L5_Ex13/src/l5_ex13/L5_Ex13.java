@@ -22,7 +22,7 @@ public class L5_Ex13 {
         int n;
         
         do{
-        System.out.print("Leia um numero inteiro");
+        System.out.print("Leia um numero inteiro: ");
         n = sc.nextInt();
         } while (n < 3 || n > 20);
         return n;
@@ -31,16 +31,16 @@ public class L5_Ex13 {
     public static void gereSerieFibonacci(int n){
         int ultimo  , penultimo, novo;
         
-        System.out.println("Dgite o primeiro termo da serie:");
+        System.out.print("Dgite o primeiro termo da serie: ");
         penultimo = sc.nextInt();
-        System.out.println("Digite o segundo termo da série:");
+        System.out.print("Digite o segundo termo da série: ");
         ultimo = sc.nextInt();
-        System.out.print(penultimo);
-        System.out.print(ultimo);
+        System.out.print(penultimo+ " ");
+        System.out.print(ultimo+ " ");
         
         for (int i = 2 ; i < n ; i++){
             novo = ultimo + penultimo;
-            System.out.println(novo);
+            System.out.print(novo+ " ");
             penultimo = ultimo;
             ultimo = novo;
         
